@@ -1,4 +1,5 @@
 algoritmo "NOTAS ESCOLARES"
+
 var
 
    g, v : vetor[1..5] de caractere
@@ -7,14 +8,16 @@ var
    
 Procedimento Topo ()
 Inicio
-   EscrevaL ("POR FAVOR COLOCAR TODAS AS RESPOSTAS EM LETRAS MAIÚSCULAS!")
+   EscrevaL ("POR FAVOR COLOCAR TODAS AS RESPOSTAS EM LETRAS MAIÃšSCULAS!")
    EscrevaL ("----------------------------------------------------------")
 FimProcedimento
+
 inicio
-// Digitar três nomes
+
+// Digitar o nome do aluno
 // Digitar 5 notas
 // Conferir o gabarito
-// Colocar a nota final (2 pts. cada questão)
+// Colocar a nota final (2 pts. cada questÃ£o)
 
    Para s <- 1 ate 5 faca
         Topo ()
@@ -23,13 +26,18 @@ inicio
         Leia (g[s])
         LimpaTela
    FimPara
+   
    Topo ()
+   
    Escreva ("Digite seu nome: ")
    Leia (n)
    LimpaTela
+   
    Topo ()
+   
    EscrevaL ("Digite as respostas dadas por ", n, ":")
    nota <- 0
+   
    Para b <- 1 ate 5 faca
         Escreva (b, ")")
         Leia (v[b])
@@ -37,6 +45,7 @@ inicio
            nota <- nota + 2
         FimSe
    FimPara
+   
    EscrevaL ("O aluno ", n, " tirou a nota: ", nota)
 
 fimalgoritmo
