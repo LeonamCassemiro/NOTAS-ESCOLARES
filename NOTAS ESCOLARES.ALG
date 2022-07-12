@@ -36,8 +36,8 @@ inicio
    Topo ()
    
    EscrevaL ("Digite as respostas dadas por ", n, ":")
-   nota <- 0
    
+   nota <- 0
    Para b <- 1 ate 5 faca
         Escreva (b, ")")
         Leia (v[b])
